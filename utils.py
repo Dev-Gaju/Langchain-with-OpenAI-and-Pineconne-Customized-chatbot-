@@ -3,10 +3,10 @@ import pinecone
 import openai
 import streamlit as st
 
-openai.api_key = "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"
+openai.api_key = "openAPI key"
 # model = SentenceTransformer('all-MiniLM-L6-v2')
 
-pinecone.init(api_key='dc75306b-a1a9-407b-aa5a-2c3240f3d31e', environment='us-west4-gcp-free')
+pinecone.init(api_key='pinecone API key', environment='env_name')
 index = pinecone.Index('langchain-chatbot')
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
